@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat: 1.5
+  lng: 1.5
+  at: 2020-03-20 18:31:27
+  vehicle: one
+
+two:
+  lat: 1.5
+  lng: 1.5
+  at: 2020-03-20 18:31:27
+  vehicle: two
