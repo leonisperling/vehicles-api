@@ -1,6 +1,4 @@
-# README
-
-# Code Challenge
+# Code Challenge door2door
 
 
 ## Installation Instructions
@@ -55,6 +53,13 @@ Start the rails server by running:
 # In the project's folder
 rails server
 ```
+
+##  RSpec
+I implemented some basic tests after doing some research. I added tests to check if the vehicle:
+* Is being properly created 
+* Is successfully de-registered
+* If its location is with radius of the office coordinates
+
 
 ## Technologies used
 ### Rails
