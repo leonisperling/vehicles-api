@@ -4,7 +4,7 @@
 class LocationsController < ApplicationController
   # setting office coordinates and radius as constants because they
   # are not supposed to change
-  OFFICE_COORDINATES = [52.53, 13.403]
+  OFFICE_COORDINATES = [52.53, 13.403].freeze
   RADIUS = 3.5
 
   # finding the vehicle before anything else happens
