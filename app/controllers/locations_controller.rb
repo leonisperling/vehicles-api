@@ -38,9 +38,7 @@ class LocationsController < ApplicationController
 
   # calculating the distance between the office and the location of the vehicle
   def within_radius?
-    distance = Geocoder::Calculations.distance_between(
-      OFFICE_COORDINATES, coordinates
-    )
+    distance = Geocoder::Calculations.distance_between(OFFICE_COORDINATES, coordinates)
 
     # returns true when the distance is less than the radius
     distance <= RADIUS
@@ -48,7 +46,7 @@ class LocationsController < ApplicationController
 
   # this method receives lat and lng
   def coordinates
-    [params[:lat], params[:lng]]
+    [location_params[:lat], location_params[:lng]]
   end
 
   # finding the vehicle and using this method as before_action

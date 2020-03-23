@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class VehiclesController < ApplicationController
   def create
     # if the vehicle doesn't exist it initializes it
@@ -15,7 +17,9 @@ class VehiclesController < ApplicationController
     # finds the vehicle
     @vehicle = Vehicle.find_by(uuid: params[:id])
     # sets it as inactive
-    @vehicle.update(active: false)
+
+    @vehicle&.update(active: false)
+
     render nil, status: 204
   end
 end
