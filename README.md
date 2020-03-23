@@ -80,8 +80,13 @@ I used ActionCable because it seamlessly integrates WebSockets with the rest of 
 
 * In order to make the code more dynamic, for more office locations, I would make use of hashes, in which I would insert all the locations and then iterate over the hash.
 
+* In order to check that the locations where broadcasting correctly, I used [Browser WebSocket Client](https://chrome.google.com/webstore/detail/browser-websocket-client/mdmlhchldhfnfnkfmljgeinlffmdgkjo?hl=en). 
+  * The URL is `ws://localhost:3000/websocket`
+  * You can simulate a connection to listen for changes using the following body: 
+  `{"command":"subscribe","identifier":"{\"channel\":\"LocationsChannel\"}"}` 
+
 ## Delivery
-The project is hosted on Heroku and can be found on https://vehicles-api-d2d.herokuapp.com/ and you can test in the simulator by running `yarn start vehicles-api-d2d.herokuapp.com`.
+The project is hosted on Heroku and can be found on https://vehicles-api-d2d.herokuapp.com/ and can be tested in the simulator by running `yarn start vehicles-api-d2d.herokuapp.com`.
 
 
 
