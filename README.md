@@ -66,9 +66,6 @@ Geocoder offers basic geospatial queries, such as `search within radius` and thi
 ### ActionCable
 I used ActionCable because it seamlessly integrates WebSockets with the rest of your Rails application. This allowed me to broadcast the locations of the vehicles.
 
-## Rspec
-
-
 ## Addressing the Challenge
 * I added the status `active` for the vehicles, as I thought that vehicles should not be active or inactive, because we do not want to lose the data they transmitted during the shifts. 
 
@@ -77,4 +74,13 @@ I used ActionCable because it seamlessly integrates WebSockets with the rest of 
 * In order to check that a vehicle is within the office radius, I made use of the `distance_between` method of Geocoder. This method calculates the distance between to spaces and I am not allowing any data postings if the vehicles exceed the radius. 
 
 * In order to make the code more dynamic, for more office locations, I would make use of hashes, in which I would insert all the locations and then iterate over the hash.
+
+## Delivery
+The project is hosted on Heroku and can be found on https://vehicles-api-d2d.herokuapp.com/ and you can test in the simulator by running `yarn start vehicles-api-d2d.herokuapp.com`.
+
+
+
+
+
+
 
